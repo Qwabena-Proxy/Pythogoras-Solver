@@ -20,9 +20,9 @@ if hypo.lower() == 'x':
         error_opp = 1
         print("Entry for Opposite is not an interger")
     if error_adj == 0 and error_opp == 0:
-        ans = sqrt((adj*2) + (opp * 2))
+        ans = sqrt((adj**2) + (opp ** 2))
         ans = str(ans).split(".")
-        print(ans[0])
+        print(f'Hypotenuse : {ans[0]}')
     
 elif adj.lower() == 'x':
     try:
@@ -36,9 +36,9 @@ elif adj.lower() == 'x':
         error_opp = 1
         print("Entry for Opposite is not an interger")
     if error_hyp == 0 and error_opp == 0:
-        ans = sqrt((hypo*2) - (opp * 2))
+        ans = sqrt((hypo**2) - (opp**2))
         ans = str(ans).split(".")
-        print(ans[0])
+        print(f'Adjacent : {ans[0]}')
 elif opp.lower() == 'x':
     try:
         hypo = int(hypo)
@@ -51,6 +51,6 @@ elif opp.lower() == 'x':
         error_adj = 1
         print("Entry for Adjacent is not an interger")
     if error_adj == 0 and error_hyp == 0:
-        ans = sqrt(-(adj*2) + (hypo * 2))
+        ans = sqrt(-(adj**2) + (hypo**2))
         ans = str(ans).split(".")
-        print(ans[0])
+        print(f'Opposite : {ans[0]}')
