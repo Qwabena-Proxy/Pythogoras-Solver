@@ -1,13 +1,17 @@
+# importing math lib
 from math import *
 
+#Taking of input
 print("X must be the input for the value you are finding for..")
 print()
 hypo = input("Hypotenuse : ")
 adj = input("Adjacent : ")
 opp = input("Opposite : ")
+
 error_adj = 0
 error_opp = 0
 error_hyp = 0
+
 if hypo.lower() == 'x':
     try:
         adj = int(adj)
