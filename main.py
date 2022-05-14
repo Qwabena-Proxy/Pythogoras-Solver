@@ -58,3 +58,5 @@ elif opp.lower() == 'x':
         ans = sqrt(-(adj**2) + (hypo**2))
         ans = str(ans).split(".")
         print(f'Opposite : {ans[0]}')
+        
+        
